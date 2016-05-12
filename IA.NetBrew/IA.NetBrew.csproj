@@ -87,11 +87,5 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\HZ.OneWire\OneWireBus\OneWireBus.csproj">
-      <Project>{3AC1246A-5D2E-42E8-8B0B-081FD5689D09}</Project>
-      <Name>OneWireBus</Name>
-    </ProjectReference>
-  </ItemGroup>
   <ItemGroup />
 </Project>
