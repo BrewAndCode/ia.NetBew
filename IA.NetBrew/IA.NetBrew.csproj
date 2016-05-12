@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <AssemblyName>EMX Application</AssemblyName>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>IA.NetBrew</RootNamespace>
+    <ProjectTypeGuids>{b69e3092-b931-443c-abe7-7e7b65f2a37f};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4B905367-C51B-4F51-8E97-B6126A154AD5}</ProjectGuid>
+    <TargetFrameworkVersion>v4.1</TargetFrameworkVersion>
+    <NetMfTargetsBaseDir Condition="'$(NetMfTargetsBaseDir)'==''">$(MSBuildExtensionsPath32)\Microsoft\.NET Micro Framework\</NetMfTargetsBaseDir>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <Import Project="$(NetMfTargetsBaseDir)$(TargetFrameworkVersion)\CSharp.Targets" />
+  <ItemGroup>
+    <Compile Include="Abstracts\RIMSKettleBase.cs" />
+    <Compile Include="Composites\HotLiqourTank.cs" />
+    <Compile Include="Composites\MashLauterTun.cs" />
+    <Compile Include="Abstracts\GlideWindow.cs" />
+    <Compile Include="controls\ManualHLTWindow.cs" />
+    <Compile Include="controls\ManualMashWindow.cs" />
+    <Compile Include="controls\TimerWindow.cs" />
+    <Compile Include="hardware\Alarm.cs" />
+    <Compile Include="hardware\BTPD.cs" />
+    <Compile Include="hardware\DS1820.cs" />
+    <Compile Include="hardware\GasSolenoid.cs" />
+    <Compile Include="hardware\I2CBus.cs" />
+    <Compile Include="hardware\IOPort.cs" />
+    <Compile Include="hardware\NewHavenSerialLCD.cs" />
+    <Compile Include="hardware\OneWireTempController.cs" />
+    <Compile Include="hardware\PID.cs" />
+    <Compile Include="hardware\Storage.cs" />
+    <Compile Include="Helpers\StringHelper.cs" />
+    <Compile Include="Platform\Constants.cs" />
+    <Compile Include="Platform\Mappings.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Recipe\Beer.cs" />
+    <Compile Include="Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="FEZCobra_GHIElectronics.NETMF.FEZ, Version=4.1.8.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="GHIElectronics.NETMF.Glide">
+      <HintPath>..\..\netmfglide-9029\Glide\bin\Debug\GHIElectronics.NETMF.Glide.dll</HintPath>
+    </Reference>
+    <Reference Include="GHIElectronics.NETMF.Hardware, Version=4.1.8.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="GHIElectronics.NETMF.Hardware.EMX, Version=4.1.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="GHIElectronics.NETMF.IO, Version=4.1.8.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="GHIElectronics.NETMF.System, Version=4.1.8.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="GHIElectronics.NETMF.USBHost, Version=4.1.8.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.SPOT.Graphics" />
+    <Reference Include="Microsoft.SPOT.Hardware" />
+    <Reference Include="Microsoft.SPOT.IO" />
+    <Reference Include="Microsoft.SPOT.Native">
+    </Reference>
+    <Reference Include="System.IO" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\HZ.OneWire\OneWireBus\OneWireBus.csproj">
+      <Project>{3AC1246A-5D2E-42E8-8B0B-081FD5689D09}</Project>
+      <Name>OneWireBus</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+</Project>

@@ -1,0 +1,22 @@
+﻿<Glide Version="1.0.3">
+  <Window Name="window1" Width="320" Height="240" BackColor="000000">
+    <Button Name="nextBtn" X="260" Y="198" Width="50" Height="32" Alpha="255" Text="Next" Font="2" FontColor="000000"/>
+    <Button Name="backBtn" X="10" Y="198" Width="50" Height="32" Alpha="255" Text="Back" Font="2" FontColor="000000"/>
+    <Button Name="relayBtn" X="100" Y="198" Width="50" Height="32" Alpha="255" Text="Relay" Font="2" FontColor="FFFFFF"/>
+    <TextBlock Name="lblTime" X="0" Y="0" Width="320" Height="32" Alpha="255" Text="Window #1" TextAlign="Center" TextVerticalAlign="Middle" Font="3" FontColor="FFFFFF"/>
+  </Window>
+</Glide>
+<Glide Version="1.0.3">
+  <Window Name="window2" Width="320" Height="240" BackColor="E6E6E6">
+    <Button Name="nextBtn" X="260" Y="198" Width="50" Height="32" Alpha="255" Text="Next" Font="2" FontColor="000000"/>
+    <Button Name="backBtn" X="10" Y="198" Width="50" Height="32" Alpha="255" Text="Back" Font="2" FontColor="000000"/>
+    <TextBlock Name="label" X="0" Y="0" Width="320" Height="32" Alpha="255" Text="Window #2" TextAlign="Center" TextVerticalAlign="Middle" Font="4" FontColor="0"/>
+  </Window>
+</Glide>
+<Glide Version="1.0.3">
+  <Window Name="window3" Width="320" Height="240" BackColor="DADADA">
+    <Button Name="nextBtn" X="260" Y="198" Width="50" Height="32" Alpha="255" Text="Next" Font="2" FontColor="000000"/>
+    <Button Name="backBtn" X="10" Y="198" Width="50" Height="32" Alpha="255" Text="Back" Font="2" FontColor="000000"/>
+    <TextBlock Name="label" X="0" Y="0" Width="320" Height="32" Alpha="255" Text="Window #3" TextAlign="Center" TextVerticalAlign="Middle" Font="4" FontColor="0"/>
+  </Window>
+</Glide>

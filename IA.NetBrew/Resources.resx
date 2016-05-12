@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="winMain" xml:space="preserve">
+    <value>&lt;Glide Version="1.0.3"&gt;
+&lt;Window Name="instance115" Width="320" Height="240" BackColor="101010"&gt;
+    &lt;Button Name="btnLoad" X="5" Y="10" Width="100" Height="35" Alpha="255" Text="Load Recipe" Font="4" FontColor="000000" DisabledFontColor="808080" TintColor="000000" TintAmount="0"/&gt;
+    &lt;Button Name="btnMLT" X="5" Y="50" Width="100" Height="35" Alpha="255" Text="Manual Mash" Font="4" FontColor="000000" DisabledFontColor="808080" TintColor="000000" TintAmount="0"/&gt;
+    &lt;Button Name="btnPumpRight" X="180" Y="79" Width="130" Height="32" Alpha="255" Text="Right Pump[OFF]" Font="4" FontColor="000000" DisabledFontColor="808080" TintColor="FF01010" TintAmount="100"/&gt;
+&lt;Button Name="btnHLT" X="5" Y="90" Width="100" Height="35" Alpha="255" Text="Manual HLT" Font="4" FontColor="000000" DisabledFontColor="808080" TintColor="000000" TintAmount="0"/&gt;
+    &lt;Button Name="btnBoil" X="5" Y="130" Width="100" Height="32" Alpha="255" Text="Manual Boil" Font="4" FontColor="000000" DisabledFontColor="808080" TintColor="000000" TintAmount="0"/&gt;
+    &lt;Button Name="btnTimer" X="5" Y="167" Width="100" Height="32" Alpha="255" Text="Timer" Font="4" FontColor="000000" DisabledFontColor="808080" TintColor="000000" TintAmount="0"/&gt;
+&lt;Button Name="btnPumpLeft" X="180" Y="116" Width="130" Height="32" Alpha="255" Text="Left Pump[OFF]" Font="4" FontColor="000000" DisabledFontColor="808080" TintColor="FF01010" TintAmount="100"/&gt;
+  &lt;/Window&gt;
+&lt;/Glide&gt;</value>
+  </data>
+  <data name="WinMLT" xml:space="preserve">
+    <value>&lt;Glide Version="1.0.3"&gt;
+  &lt;Window Name="instance115" Width="320" Height="240" BackColor="000000"&gt;
+    &lt;TextBlock Name="txtCurrentTemp" X="0" Y="0" Width="320" Height="70" Alpha="255" Text="TextBlock" TextAlign="Center" TextVerticalAlign="Top" Font="9" FontColor="007000" BackColor="000000" ShowBackColor="False"/&gt;
+    &lt;TextBlock Name="instance652" X="0" Y="98" Width="120" Height="32" Alpha="255" Text="Set Temperature:" TextAlign="Right" TextVerticalAlign="Top" Font="4" FontColor="0" BackColor="000000" ShowBackColor="False"/&gt;
+    &lt;TextBox Name="txtSetTemp" X="125" Y="95" Width="80" Height="32" Alpha="255" Text="" TextAlign="Left" Font="4" FontColor="000000"/&gt;
+    &lt;Button Name="btnBack" X="14" Y="198" Width="80" Height="32" Alpha="255" Text="Back" Font="4" FontColor="000000" DisabledFontColor="808080" TintColor="000000" TintAmount="0"/&gt;
+    &lt;Button Name="btnRunStop" X="220" Y="198" Width="80" Height="32" Alpha="255" Text="Run" Font="4" FontColor="000000" DisabledFontColor="808080" TintColor="000000" TintAmount="0"/&gt;
+    &lt;Button Name="btnUp" X="213" Y="77" Width="80" Height="32" Alpha="255" Text="Up" Font="4" FontColor="000000" DisabledFontColor="808080" TintColor="000000" TintAmount="0"/&gt;
+    &lt;Button Name="btnDown" X="214" Y="116" Width="80" Height="32" Alpha="255" Text="Down" Font="4" FontColor="000000" DisabledFontColor="808080" TintColor="000000" TintAmount="0"/&gt;
+  &lt;/Window&gt;
+&lt;/Glide&gt;</value>
+  </data>
+  <data name="WinHLT" xml:space="preserve">
+    <value>&lt;Glide Version="1.0.3"&gt;
+  &lt;Window Name="WinHLT" Width="320" Height="240" BackColor="000000"&gt;
+    &lt;TextBlock Name="txtCurrentTemp" X="0" Y="0" Width="320" Height="70" Alpha="255" Text="TextBlock" TextAlign="Center" TextVerticalAlign="Top" Font="9" FontColor="007000" BackColor="000000" ShowBackColor="False"/&gt;
+    &lt;TextBlock Name="instance652" X="0" Y="98" Width="120" Height="32" Alpha="255" Text="Set Temperature:" TextAlign="Right" TextVerticalAlign="Top" Font="4" FontColor="0" BackColor="000000" ShowBackColor="False"/&gt;
+    &lt;TextBox Name="txtSetTemp" X="125" Y="95" Width="80" Height="32" Alpha="255" Text="" TextAlign="Left" Font="4" FontColor="000000"/&gt;
+    &lt;Button Name="btnBack" X="14" Y="198" Width="80" Height="32" Alpha="255" Text="Back" Font="4" FontColor="000000" DisabledFontColor="808080" TintColor="000000" TintAmount="0"/&gt;
+    &lt;Button Name="btnRunStop" X="220" Y="198" Width="80" Height="32" Alpha="255" Text="Run" Font="4" FontColor="000000" DisabledFontColor="808080" TintColor="000000" TintAmount="0"/&gt;
+    &lt;Button Name="btnUp" X="213" Y="77" Width="80" Height="32" Alpha="255" Text="Up" Font="4" FontColor="000000" DisabledFontColor="808080" TintColor="000000" TintAmount="0"/&gt;
+    &lt;Button Name="btnDown" X="214" Y="116" Width="80" Height="32" Alpha="255" Text="Down" Font="4" FontColor="000000" DisabledFontColor="808080" TintColor="000000" TintAmount="0"/&gt;
+  &lt;/Window&gt;
+&lt;/Glide&gt;</value>
+  </data>
+  <data name="WinTimer" xml:space="preserve">
+    <value>&lt;Glide Version="1.0.3"&gt;
+  &lt;Window Name="WinTimer" Width="320" Height="240" BackColor="000000"&gt;
+    &lt;TextBlock Name="txtTime" X="66" Y="19" Width="200" Height="100" Alpha="255" Text="00:00" TextAlign="Center" TextVerticalAlign="Middle" Font="9" FontColor="FFFFFF" BackColor="000000" ShowBackColor="True"/&gt;
+    &lt;Button Name="btn60" X="5" Y="126" Width="80" Height="32" Alpha="255" Text="60 Min" Font="4" FontColor="000000" DisabledFontColor="808080" TintColor="000000" TintAmount="0"/&gt;
+    &lt;Button Name="btn75" X="5" Y="164" Width="80" Height="32" Alpha="255" Text="75 Min" Font="4" FontColor="000000" DisabledFontColor="808080" TintColor="000000" TintAmount="0"/&gt;
+    &lt;Button Name="btn90" X="5" Y="203" Width="80" Height="32" Alpha="255" Text="90 Min" Font="4" FontColor="000000" DisabledFontColor="808080" TintColor="000000" TintAmount="0"/&gt;
+    &lt;Button Name="btnStartStop" X="150" Y="162" Width="80" Height="32" Alpha="255" Text="Start" Font="4" FontColor="000000" DisabledFontColor="808080" TintColor="000000" TintAmount="0"/&gt;
+ &lt;Button Name="btnBack" X="149" Y="202" Width="80" Height="32" Alpha="255" Text="Back" Font="4" FontColor="000000" DisabledFontColor="808080" TintColor="000000" TintAmount="0"/&gt;
+  &lt;/Window&gt;
+&lt;/Glide&gt;</value>
+  </data>
+</root>
